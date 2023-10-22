@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "com.r42914lg.smsretriever"
-        minSdk = 24
+        minSdk = 26
         targetSdk = 33
         versionCode = 1
         versionName = "1.0"
@@ -50,6 +50,10 @@ android {
 }
 
 dependencies {
+
+    // SMS retriever
+    implementation("com.google.android.gms:play-services-auth:20.7.0")
+    implementation("com.google.android.gms:play-services-auth-api-phone:18.0.1")
 
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
